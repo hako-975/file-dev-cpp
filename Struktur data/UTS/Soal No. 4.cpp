@@ -8,7 +8,8 @@ typedef struct
 	int jumlahPenumpang;
 	bool kopling;
 	string warna;
-}mbl;
+} mbl;
+
 mbl mobil;
 
 int main()
@@ -40,8 +41,7 @@ int main()
 	cin>>mobil.warna;
 	
 	cout<<endl;
-	
-	// mencetak hasil inputan
+	cout<<"Berikut adalah Spesifikasi Mobil"<<endl;
 	cout<<"Akselerasi Mobil (Km/Jam): "<<mobil.akselerasi<<endl;
 	cout<<"Top Speed Mobil (Km/Jam): "<<mobil.topSpeed<<endl;
 	cout<<"Jumlah Penumpang Mobil: "<<mobil.jumlahPenumpang<<endl;
@@ -56,5 +56,7 @@ int main()
 	}
 	
 	cout<<"Warna Mobil: "<<mobil.warna<<endl;
+	
+	return 0;
 }
 
