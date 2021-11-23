@@ -4,7 +4,9 @@ using namespace std;
 
 int main()
 {
+	cout<<"Masukkan Nama: ";
 	string nama;
-	getline(cin,nama);
+	//cin.ignore();
+	getline(cin,nama, '\n');
 	cout<<nama;
 }
