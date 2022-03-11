@@ -14,3 +14,4 @@ int main()
     add_score(&score);
     cout<<"score setelah diubah: "<<score<<endl;
 }
+
