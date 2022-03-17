@@ -3,29 +3,29 @@ using namespace std;
 
 struct Mahasiswa
 {
-	char nim[15];
-	char nama[25];
-	char alamat[50];
-	short umur;
+	char Nim[15];
+	char Nama[25];
+	char Alamat[50];
+	short Umur;
 };
 
 int main()
 {
-	Mahasiswa mhs;
+	Mahasiswa Mhs;
 	cout<<"Program Biodata Mahasiswa"<<endl;
 	cout<<"NIM \t\t: ";
-	cin.getline(mhs.nim, 15);
+	cin.getline(Mhs.Nim, 15);
 	cout<<"Nama \t\t: ";
-	cin.getline(mhs.nama, 25);
+	cin.getline(Mhs.Nama, 25);
 	cout<<"Alamat \t\t: ";
-	cin.getline(mhs.alamat, 50);
+	cin.getline(Mhs.Alamat, 50);
 	cout<<"Umur \t\t: ";
-	cin>>mhs.umur;
+	cin>>Mhs.Umur;
 	cout<<endl;
 	cout<<"Detail Biodata Mahasiswa"<<endl;
-	cout<<"NIM \t\t: "<<mhs.nim<<endl;	
-	cout<<"Nama \t\t: "<<mhs.nama<<endl;
-	cout<<"Alamat \t\t: "<<mhs.alamat<<endl;
-	cout<<"Umur \t\t: "<<mhs.umur<<endl;	
+	cout<<"NIM \t\t: "<<Mhs.Nim<<endl;	
+	cout<<"Nama \t\t: "<<Mhs.Nama<<endl;
+	cout<<"Alamat \t\t: "<<Mhs.Alamat<<endl;
+	cout<<"Umur \t\t: "<<Mhs.Umur<<endl;	
 }
 
