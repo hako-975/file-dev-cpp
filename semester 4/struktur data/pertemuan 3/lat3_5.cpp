@@ -57,3 +57,4 @@ int main()
 	cout<<"Nilai Akhir : "<<N.Nilai_Akhir<<endl;
 	cout<<"Nilai Huruf : "<<N.Nilai_Huruf<<endl;
 }
+

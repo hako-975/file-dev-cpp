@@ -58,3 +58,4 @@ int main()
 	cout<<"\nTanggal Lahir\t: "<<Mhs.Lahir.Tanggal<<"-"<<
 	Mhs.Lahir.Bulan<<"-"<<Mhs.Lahir.Tahun<<endl;	
 }
+

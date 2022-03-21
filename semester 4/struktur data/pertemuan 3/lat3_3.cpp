@@ -4,8 +4,8 @@ using namespace std;
 struct Mahasiswa
 {
 	char Nim[15];
-	char Nama[25];
-	char Alamat[50];
+	char Nama[50];
+	char Alamat[100];
 	short Umur;
 };
 
@@ -18,14 +18,16 @@ int main()
 	{
 		cout<<"Biodata Mahasiswa Ke-"<<i+1<<endl;
 		cout<<"NIM \t\t: ";
-		cin>>Mhs[i].Nim;
+		cin.getline(Mhs[i].Nim, 15);
 		cout<<"Nama \t\t: ";
-		cin>>Mhs[i].Nama;
+		cin.getline(Mhs[i].Nama, 50);
 		cout<<"Alamat \t\t: ";
-		cin>>Mhs[i].Alamat;
+		cin.getline(Mhs[i].Alamat, 100);
 		cout<<"Umur \t\t: ";
 		cin>>Mhs[i].Umur;
 		cout<<endl;
+		// mengabaikan baris baru, untuk cin
+		cin.ignore( 1000, '\n' );
 	}
 	
 	cout<<"Detail Biodata Mahasiswa"<<endl;
