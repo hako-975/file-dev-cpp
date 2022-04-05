@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	char *nama = "Andri Firman Saputra";
+	const char *nama = "Andri Firman Saputra";
 	cout<<strlen(nama);
 }
 
