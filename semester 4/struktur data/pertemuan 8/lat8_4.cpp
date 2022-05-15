@@ -8,7 +8,9 @@ int main()
 {
 	int nilai[20];
 	int i, j, n, l;
-	int temp, u, iMin;
+	int temp, u, iMin, iMaks;
+	int pilihan;
+	char lagi;
 	
 	cout<<"Masukkan banyak bilangan: ";
 	cin>>n;
@@ -49,12 +51,14 @@ int main()
 		{
 			cout<<setw(3)<<nilai[i];
 		}
-	}
+	}	
 	
 	cout<<"\nData sesudah diurutkan: ";
 	for (i = 0; i < n; i++)
 	{
 		cout<<setw(3)<<nilai[i];
 	}
+	
 	getch();
 }
+

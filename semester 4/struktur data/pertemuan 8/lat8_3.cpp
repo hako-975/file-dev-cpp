@@ -54,5 +54,7 @@ int main()
 	{
 		cout<<setw(3)<<nilai[i];
 	}
+	
 	getch();
 }
+
