@@ -47,7 +47,7 @@ int main()
 					s = 1;
 					for(l = 0; l < n; l++)
 					{
-						cout<<setw(4)<<urutanNilai[l]<<" ";
+						cout<<setw(4)<<nilai[l]<<" ";
 					}
 					cout<<"\n\t";
 					getch();
@@ -59,7 +59,7 @@ int main()
 		cout<<"\nJarak = "<<jarak<<endl;
 	}
 	
-	// cetak array sebelum di urutkan
+	// cetak array setelah di urutkan
 	for (i = 0; i < n; i++)
 	{
 		cout<<nilai[urutanNilai[i]]<<" ";
