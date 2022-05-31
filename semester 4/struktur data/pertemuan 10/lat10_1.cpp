@@ -26,86 +26,61 @@ int main()
 {
     char huruf, huruf2;
     simpul l = NULL;
-    int pil;
-    char lagi;
-    
-    do
-    {
-    	system("cls");
-    	cout<<"Operasi pada Single Linked List"<<endl;
-	    cout<<"1. Penyisipan Simpul Di Depan"<<endl;
-	    cout<<"2. Penyisipan Simpul Di Belakang"<<endl;
-	    cout<<"3. Penyisipan Simpul Setelah"<<endl;
-		cout<<"4. Penyisipan Simpul Sebelum"<<endl;
-		cout<<"5. Hapus Simpul Depan"<<endl;
-		cout<<"6. Hapus Simpul Belakang"<<endl;
-		cout<<"7. Hapus Simpul Tengah"<<endl;
-		cout<<"8. Cetak Simpul"<<endl;
-		cout<<"9. Keluar"<<endl;
-	    cout<<endl;
-	    cout<<"Masukkan Pilihan: ";
-	    cin>>pil;
+    	
+    cout<<"OPERASI PADA SINGLE LINKED LIST"<<endl<<endl;
+	cout<<"Penyisipan Simpul Di Depan"<<endl<<endl;
+	cout<<"Masukan Huruf: "; 
+	cin>>huruf;
+	SisipDepan (l, huruf);
+	cout<<"Masukan Huruf: "; 
+	cin>>huruf;
+	SisipDepan (l, huruf);
+	cout<<"Masukan Huruf: "; 
+	cin>>huruf;
+	SisipDepan (l, huruf);
+	cout<<"Masukan Huruf: "; 
+	cin>>huruf;
+	SisipDepan (l, huruf);
+	Cetak (l);
+	cout<<"\n\nPenyisipan Simpul Di Belakang"<<endl<<endl;
+	cout<<"Masukan Huruf: "; 
+	cin>>huruf;
+	SisipBelakang (l, huruf);
+	cout<<"Masukan Huruf: "; 
+	cin>>huruf;
+	SisipBelakang (l, huruf);
+	cout<<"Masukan Huruf: "; 
+	cin>>huruf;
+	SisipBelakang (l, huruf);
+	cout<<"Masukan Huruf: "; 
+	cin>>huruf;
+	SisipBelakang (l, huruf);
+	Cetak (l);
+	cout<<endl<<endl<<"Masukan Huruf: "; 
+	cin>>huruf;
+	cout<<"Disisip Setelah Huruf: "; 
+	cin>>huruf2;
+	cout<<huruf<<" Disisip Setelah "<<huruf2<<endl;
+	SisipTengah1 (l, huruf, huruf2);
+	Cetak(l);
+	cout<<endl<<endl<<"Masukan Huruf: "; 
+	cin>>huruf;
+	cout<<"Disisip Sebelum Huruf: "; 
+	cin>>huruf2;
+	cout<<huruf<<" Disisip Sebelum "<<huruf2<<endl;
+	SisipTengah2 (l, huruf, huruf2);
+	Cetak (l) ;
+	cout<<endl<<endl<<"Setelah Hapus Simpul Depan "<<endl;
+	HapusDepan (l);
+	Cetak (l);
+	cout<<endl<<endl<<"Setelah Hapus Simpul Belakang "<<endl;
+	HapusBelakang (l);
+	Cetak (l);
+	cout<<"\n\nMasukkan Huruf Tengah Yang akan dihapus: ";
+	cin>>huruf;
+	HapusTengah (l,huruf);
+	Cetak (l);
 	    
-	    switch (pil)
-		{
-			case 1:
-				cout<<"Masukan Huruf: "; 
-			    cin>>huruf;
-			    SisipDepan(l, huruf);
-			    cout<<endl;
-			break;
-			case 2:
-				cout<<"Masukan Huruf: "; 
-			    cin>>huruf;
-			    SisipBelakang(l, huruf);
-			    cout<<endl;
-			break;
-			case 3:
-				cout<<"Masukkan Huruf: ";
-			    cin>>huruf;
-			    cout<<"Disisip Setelah Huruf: ";
-			    cin>>huruf2;
-			    cout<<huruf<<" Disisip Setelah "<<huruf2<<endl; 
-			    SisipTengah1(l, huruf, huruf2);
-			    cout<<endl;
-			break;
-			case 4:
-				cout<<"Masukkan Huruf: ";
-			    cin>>huruf;
-			    cout<<"Disisip Sebelum Huruf: ";
-			    cin>>huruf2;
-			    cout<<huruf<<" Disisip Sebelum "<<huruf2<<endl;
-			    SisipTengah2(l, huruf, huruf2);
-			    cout<<endl;
-			break;
-			case 5:
-				cout<<"Telah menghapus Simpul Depan"<<endl;
-	    		HapusDepan(l);
-	    		cout<<endl;
-	    	break;
-	    	case 6:
-	    		cout<<"Telah menghapus Simpul Belakang"<<endl;
-	    		HapusBelakang(l);
-	    		cout<<endl;
-			break;
-			case 7:
-				cout<<"Masukkan Huruf Tengah yang akan dihapus:";
-			    cin>>huruf;
-			    HapusTengah(l, huruf);
-			    cout<<endl;
-			break;
-			case 8:
-				Cetak(l);
-				cout<<endl;
-				getch();
-			break;
-			default:
-				cout<<"Keluar dari Program"<<endl;
-				exit(1);
-			break;
-		}
-	} while (pil < 10);
-    
     getch();
 }
 
@@ -290,3 +265,4 @@ void HapusTengah(simpul &l, char elemen)
         free(hapus);
     }
 }
+
