@@ -74,7 +74,7 @@ void CETAK(stack s)
 	cout<<"Isi stack: ";
 	if (s.top != 0)
 	{
-		for (i = 1; i < s.top; i++)
+		for (i = s.top; i > 1; i--)
 		{
 			cout<<s.isi[i]<<" ";
 		}
