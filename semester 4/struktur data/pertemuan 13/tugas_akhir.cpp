@@ -21,39 +21,38 @@ int main()
 	simpul L = NULL; //Pastikan bahwa L kosong
 	int i, pilihan;
 	
-	cout<<"OPERASI PADA SINGLE LINKED LIST"<<endl;
-	cout<<"\nPenyisipan Simpul \n\n";
-	for(i=1; i<=3;i++)
+	do
 	{
-	    cout<<"Masukan Huruf :";
-	    cin>>huruf;
-	    Sisip_Belakang (L, huruf);
-	}
-	Cetak (L) ;
+		cout<<"OPERASI PADA SINGLE LINKED LIST"<<endl;
+		cout<<"1. Sisip Belakang"<<endl;
+		cout<<"2. Hapus Depan"<<endl;
+		cout<<"3. Cetak"<<endl;
+		cout<<"Masukkan pilihan: ";
+		cin>>pilihan;
+		switch(pilihan)
+		{
+			case 1:
+				cout<<"Masukan Huruf: ";
+				cin>>huruf;
+				Sisip_Belakang (L, huruf);
+			break;
+			case 2:
+				cout<<"Setelah Hapus Simpul "<<endl;
+				Hapus_Depan(L);
+			break;
+			case 3:
+				Cetak(L);
+				cout<<endl;
+			break;
+			default:
+				cout<<"Keluar"<<endl;
+			break;		
+		}
+		
+		cout<<"Apakah ingin melakukan lagi? y/n"<<endl;
+		cin>>lagi;
+	} while (lagi == 'y' || lagi == 'Y');
 	
-	cout<<"\nSetelah Hapus Simpul "<<endl;
-	Hapus_Depan (L) ;
-	Cetak(L) ;
-	cout<<"\nSetelah Hapus Simpul "<<endl ;
-	Hapus_Depan ( L ) ;
-	Cetak (L) ;
-	cout<<"\nSetelah Hapus Simpul "<<endl;
-	Hapus_Depan (L) ;
-	Cetak(L) ;
-	cout<<"\nPenyisipan simpul \n\n";
-	for (i=1 ; i<=3;i++)
-	{
-	    cout<<"Masukan Huruf :";
-	    cin>>huruf;
-	    Sisip_Belakang (L, huruf);
-	}
-	Cetak (L) ;
-	cout<<"\nSetelah Hapus Simpul "<<endl;
-	Hapus_Depan ( L ) ;
-	Cetak (L) ;
-	cout<<"\nSetelah Hapus Simpul "<<endl;
-	Hapus_Depan (L) ;
-	Cetak (L) ;	
 	getch();
 }
 
