@@ -36,7 +36,7 @@ int main()
 	}
 	
 	cout << "Total bayar: Rp." << harga_akhir << endl;
-  	cout << "Menghitung lagi? Y/t"<<endl;
+	cout << "Menghitung lagi? Y/t"<<endl;
 	cin >> pilih;
   } while (pilih == 'y' || pilih == 'Y');
  
